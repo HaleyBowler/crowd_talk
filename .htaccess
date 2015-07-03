@@ -1,6 +1,6 @@
 Options FollowSymLinks
 
 RewriteEngine on
-RewriteBase /my_base_url/
+RewriteBase /ci/
 RewriteCond $1 !^(index\.php|images|robots\.txt)
 RewriteRule ^(.*)$ index.php/$1 [L]
