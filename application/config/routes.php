@@ -51,13 +51,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['default_controller'] = 'home';
+$route['ci/index.php/migrate'] = 'migrate';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['ci/thoguht.php/new'] = 'thought/new';
-$route['ci/question.php/new'] = 'quetsion/new';
+$route['ci/thought.php/new'] = 'thought/new';
+$route['ci/question'] = 'question';
 $route['ci/thought.php/stats'] = 'thought/stats';
-$route['ci/thought.php/stats'] = 'thought/stats';
-
+$route['ci/question/stats'] = 'question/stats';
+$route['ci/question/add'] = 'question/add';
+$route['ci/question/insert_into_db'] = 'question/insert_into_db';
 
 
 

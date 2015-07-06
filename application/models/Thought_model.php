@@ -1,5 +1,5 @@
 <?php
-class Thoughtmodel extends CI_Model {
+class Thought_model extends CI_Model {
 
     public $body;
     public $submission_id;
