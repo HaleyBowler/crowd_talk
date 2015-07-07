@@ -1,5 +1,5 @@
 <?php
-class Questionmodel extends CI_Model {
+class Question_model extends CI_Model {
 
     public $body;
     public $submission_id;

@@ -1,5 +1,5 @@
 <?php
-class Submissionmodel extends CI_Model {
+class Submission_model extends CI_Model {
 
     public $date;
     public $lat;
