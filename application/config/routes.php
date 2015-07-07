@@ -62,6 +62,7 @@ $route['ci/question/stats'] = 'question/stats';
 $route['ci/question/add'] = 'question/add';
 $route['ci/question/insert_into_db'] = 'question/insert_into_db';
 $route['ci/thought/insert_into_db'] = 'thought/insert_into_db';
+$route['ci/question/submit'] = 'question/submit';
 
 
 

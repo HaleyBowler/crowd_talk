@@ -3,31 +3,35 @@ class Question extends CI_Controller {
 
 	public function index()
 	{
+		$date = date("Y-m-d");
+		$date = '"'.$date.'"';
 
-		/* TODO: Set up so questions come from database
-		$date=idate('z');
+		$query = $this->db->query('SELECT * FROM `new_question` WHERE ask_date='.$date.' LIMIT 1');
 
-		$query = $this->db->query('SELECT * FROM  WHERE OrderDate='2008-11-11'');
-		*/
+		$row = $query->row();
+
 		$data = array(
-               'question' => 'Who is the best intern?',
-               'answer_a' => 'James',
-               'answer_b' => 'Mark',
-               'answer_c' => 'Haley',
-               'answer_d' => 'The duck book'
+               'question' => $row->question,
+               'answer_a' => $row->answer_a,
+               'answer_b' => $row->answer_b,
+               'answer_c' => $row->answer_c,
+               'answer_d' => $row->answer_d
         );
 
-		$this->load->view('question/index.php', $data);
+		$this->load->view('question/index', $data);
 	}
 
-	public function stats()
+	public function submit()
 	{
-		$this->load->view('question/stats.php');
+		$answer = $_GET['answer'];
+		echo $answer;
+
+		$this->load->view('question/stats');
 	}
 
 	public function add()
 	{
-		$this->load->view('question/add.php');
+		$this->load->view('question/add');
 	}
 
 	public function insert_into_db()
