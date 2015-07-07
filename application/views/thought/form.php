@@ -19,7 +19,8 @@
 </body>
 </html>-->
 
-<form action="<?php echo base_url();?>index/thought/insert_into_db" method="post">
+
+<form action="insert_into_db" method="post">
 Thoughts? <input type = 'text' name='body'>
 <input type='submit'>
 </form>

@@ -2,7 +2,7 @@
 <?php
 class Thought extends CI_Controller {
 
-     function index()
+     function form()
      {
      	//$this->load->helper('form');
 		//$this->load->library('form_validation');

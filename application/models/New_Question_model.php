@@ -7,6 +7,7 @@ class New_Question_model extends CI_Model {
     public $answer_b;
     public $answer_c;
     public $answer_d;
+    public $new_question_id;
 
     function __construct()
     {

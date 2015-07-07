@@ -4,6 +4,7 @@ class Answer_model extends CI_Model {
     public $body;
     public $question_id;
     public $vote;
+    public $answer_id;
 
     function __construct()
     {

@@ -3,6 +3,7 @@ class Question_model extends CI_Model {
 
     public $body;
     public $submission_id;
+    public $question_id;
 
     function __construct()
     {

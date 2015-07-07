@@ -4,6 +4,7 @@ class Submission_model extends CI_Model {
     public $date;
     public $lat;
     public $long;
+    public $submission_id;
 
     function __construct()
     {
