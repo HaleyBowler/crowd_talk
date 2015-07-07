@@ -1,5 +1,5 @@
 <?php
-class Thoughtmodel extends CI_Model {
+class Thought_model extends CI_Model {
 
     public $body;
     public $submission_id;
@@ -16,13 +16,20 @@ class Thoughtmodel extends CI_Model {
         return $query->result();
     }
 
-    function insert_entry()
+    function insert_into_db()
     {
         $this->body   = $_POST['body']; // please read the below note
         $this->subission_id = $_POST['submission'];
 
         $this->db->insert('entries', $this);
     }
+/*
+    function insert_into_db()
+    {
+        $body = $_POST['body'];
+        $this->db->query("INSERT INTO thought VALUES('$body')");
+    }
+*/
 
 }
 ?>
