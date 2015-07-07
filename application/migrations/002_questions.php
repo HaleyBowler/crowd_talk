@@ -17,10 +17,6 @@ class Migration_Questions extends CI_Migration {
                                 'type' => 'VARCHAR',
                                 'constraint' => '800'
                         ),
-                        'submission_id' => array(
-                                'type' => 'INT',
-                                'constraint' => 5,
-                        ),
 
                         
                 ));
