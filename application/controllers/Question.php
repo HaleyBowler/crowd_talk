@@ -6,13 +6,13 @@ class Question extends CI_Controller {
 		$date = date("Y-m-d");
 		$date = '"'.$date.'"';
 
-		$query = $this->db->query('SELECT * FROM `new_question` WHERE ask_date='.$date.' LIMIT 1');
+		$query = $this->db->query('SELECT * FROM `question` WHERE ask_date='.$date.' LIMIT 1');
 
 		$row = $query->row();
 
 		$data = array(
                'question' => $row->question,
-               'question_id' => $row->new_question_id,
+               'question_id' => $row->question_id,
                'answer_a' => $row->answer_a,
                'answer_b' => $row->answer_b,
                'answer_c' => $row->answer_c,
@@ -27,8 +27,6 @@ class Question extends CI_Controller {
 		$answer = $_GET['answer'];
 		$question_id = $_GET['question_id'];
 
-		$query = $this->db->query()
-
 		$this->load->view('question/stats');
 	}
 
@@ -40,8 +38,8 @@ class Question extends CI_Controller {
 	public function insert_into_db()
 	{
 
-		$this->load->model('New_Question_model');
-		$this->New_Question_model->insert_entry();
+		$this->load->model('Question_model');
+		$this->Question_model->insert_entry();
 		$this->load->view('success');
 	}
 }

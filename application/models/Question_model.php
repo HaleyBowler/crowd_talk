@@ -1,7 +1,12 @@
 <?php
 class Question_model extends CI_Model {
 
-    public $body;
+    public $ask_date;
+    public $question;
+    public $answer_a;
+    public $answer_b;
+    public $answer_c;
+    public $answer_d;
     public $question_id;
 
     function __construct()
@@ -12,10 +17,15 @@ class Question_model extends CI_Model {
 
     function insert_entry()
     {
-        $this->body   = $_POST['body']; // please read the below note
-        $this->subission_id = $_POST['submission'];
+        $this->ask_date = $_POST['ask_date'];
+        $this->question   = $_POST['question'];
+        $this->answer_a   = $_POST['answer_a'];
+        $this->answer_b   = $_POST['answer_b'];
+        $this->answer_c   = $_POST['answer_c'];
+        $this->answer_d   = $_POST['answer_d'];
+        
 
-        $this->db->insert('entries', $this);
+        $this->db->insert('question', $this);
     }
 
 }

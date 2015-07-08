@@ -13,11 +13,29 @@ class Migration_Questions extends CI_Migration {
                                 'unsigned' => TRUE,
                                 'auto_increment' => TRUE
                         ),
-                        'body' => array(
+                        'ask_date' => array(
+                                'type' => 'DATE'
+                        ),
+                        'question' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => '800'
                         ),
-
+                        'answer_a' => array(
+                                'type' => 'VARCHAR',
+                                'constraint' => '800'
+                        ),
+                        'answer_b' => array(
+                                'type' => 'VARCHAR',
+                                'constraint' => '800'
+                        ),
+                        'answer_c' => array(
+                                'type' => 'VARCHAR',
+                                'constraint' => '800'
+                        ),
+                        'answer_d' => array(
+                                'type' => 'VARCHAR',
+                                'constraint' => '800'
+                        )
                         
                 ));
                 $this->dbforge->add_key('question_id', TRUE);
