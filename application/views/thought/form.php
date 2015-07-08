@@ -6,8 +6,11 @@
 </head>
 <body>
 	<form action="insert_into_db" method="post">
-	Thoughts? <input type = 'text' name='body'>
-	<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-primary">
+		<div class="form-group">
+		<label for="thought">Thought</label><br/>
+			<input type = 'text' name='body'>
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
 	</form>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.11.3.min.js"); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
