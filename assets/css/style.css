@@ -1,8 +1,3 @@
-a#thought_button {
-  width: 100%;
-  height: 50%;
-}
-
 textarea.form-control {
 	height: 65%;
 	background-color: #F7F5FB;
@@ -81,6 +76,18 @@ textarea.form-control {
 .thought-form {
 	background-color: #A1CDF1;
 
+}
+
+a#thought_button {
+  width: 100%;
+  height: 50%;
+  background-color: #A1CDF1;
+  font-family: 'Comfortaa', cursive;
+  padding: 14vh 0 32vh 0;
+  color: #F7F5FB;
+  font-size: 7em;
+  border-width: 2vh;
+  border-color: #F7F5FB;
 }
 
 a#question_button {
