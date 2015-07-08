@@ -8,7 +8,6 @@ a#thought_button {
   font-size: 7em;
   border-width: 2vh;
   border-color: #F7F5FB;
-  border-radius: 1.6em;
 }
 
 a#question_button {
@@ -21,5 +20,4 @@ a#question_button {
   font-size: 7em;
   border-width: 2vh;
   border-color: #A1CDF1;
-  border-radius: 1.6em;
 }
