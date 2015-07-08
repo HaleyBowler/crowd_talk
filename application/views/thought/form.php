@@ -1,26 +1,15 @@
-<!--<html>
+<html>
 <head>
-<title>Let's Talk</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Thoughts</title>
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
 </head>
 <body>
-
-<?php echo validation_errors(); ?>
-
-<?php echo form_open('thought/index'); ?>
-
-<label for="thought">Thought?</label>
-<input type="text" name="body" value="" maxlength= "140" size="50" /><br/>
-
-
-<div><input type="submit" value="Submit" /></div>
-
-</form>
-
+	<form action="insert_into_db" method="post">
+	Thoughts? <input type = 'text' name='body'>
+	<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-primary">
+	</form>
+	<script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.11.3.min.js"); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
 </body>
-</html>-->
-
-
-<form action="insert_into_db" method="post">
-Thoughts? <input type = 'text' name='body'>
-<input type='submit'>
-</form>
+</html>

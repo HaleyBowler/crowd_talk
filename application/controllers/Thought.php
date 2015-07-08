@@ -1,11 +1,8 @@
 <?php
 class Thought extends CI_Controller {
 
-     function form()
-     {
-     	//$this->load->helper('form');
-		//$this->load->library('form_validation');
-
+    function form()
+    {
         $this->load->view('thought/form');
     }   
 
@@ -13,8 +10,9 @@ class Thought extends CI_Controller {
     {
     	$this->load->model('Thought_model');
     	$this->Thought_model->insert_into_db();
-		$this->load->view('thought/stats');//loading success view
+		$this->load->view('thought/stats');
 	}
+    
     function stats() 
     {
         $this->load->model('Thought_model');

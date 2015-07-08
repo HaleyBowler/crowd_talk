@@ -57,11 +57,12 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
+
 /*Thought Path*/
 $route['ci/thought/form'] = 'thought/form';
 $route['ci/thought/stats'] = 'thought/stats';
-$route['ci/thought/success'] = 'thought/success';
 $route['ci/thought/insert_into_db'] = 'thought/insert_into_db';
+$route['ci/info/index'] = 'info';
 
 /*Question Path*/
 $route['ci/question'] = 'question';
