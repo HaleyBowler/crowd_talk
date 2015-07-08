@@ -21,14 +21,10 @@ class Migration_Question_Submits extends CI_Migration {
                             'question_id' => array(
                                     'type' => 'INT',
                                     'constraint' => 5,
-                            ),
-                            'answer_body' => array(
-                                    'type' => 'VARCHAR',
-                                    'constraint' => '800'
                             )
                     ));
                     $this->dbforge->add_key('id', TRUE);
-                    $this->dbforge->create_table('answer');
+                    $this->dbforge->create_table('Question_Submit');
             }
 
             public function down()
