@@ -4,11 +4,12 @@
 	<title>Home</title>
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>" />
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<a class="btn btn-default" href="thought/form" role="button">Thoughts?</a>
+	<a id="thought_button" class="btn btn-default" href="thought/form" role="button">Thoughts?</a>
 	<br/>
-	<a class="btn btn-default" href="question" role="button">Daily Question</a>
+	<a id="question_button" class="btn btn-default" href="question" role="button">Daily Question</a>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.11.3.min.js"); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
 </body>
