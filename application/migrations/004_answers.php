@@ -13,6 +13,10 @@ class Migration_Answers extends CI_Migration {
                                 'unsigned' => TRUE,
                                 'auto_increment' => TRUE
                         ),
+                       'answer_letter' => array(
+                                'type' => 'VARCHAR',
+                                'constraint' => '800'
+                        ),
                         'question_id' => array(
                                 'type' => 'INT',
                                 'constraint' => 5,

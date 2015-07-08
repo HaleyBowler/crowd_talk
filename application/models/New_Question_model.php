@@ -21,8 +21,8 @@ class New_Question_model extends CI_Model {
         $this->question   = $_POST['question'];
         $this->answer_a   = $_POST['answer_a'];
         $this->answer_b   = $_POST['answer_b'];
-        $this->answer_c   = $_POST['question'];
-        $this->answer_d   = $_POST['question'];
+        $this->answer_c   = $_POST['answer_c'];
+        $this->answer_d   = $_POST['answer_d'];
         
 
         $this->db->insert('new_question', $this);
