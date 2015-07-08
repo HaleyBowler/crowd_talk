@@ -2,6 +2,8 @@
     <!--Load the AJAX API-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
+<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
+<link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>" />
 <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300' rel='stylesheet' type='text/css'>
     <script type="text/javascript">
 
@@ -64,6 +66,7 @@ Highcharts.createElement('link', {
 // Add the background image to the container
 Highcharts.wrap(Highcharts.Chart.prototype, 'getContainer', function (proceed) {
    proceed.call(this);
+   this.container.style.background = '#A1CDF1';
 });
 
 
@@ -77,7 +80,7 @@ Highcharts.theme = {
    },
    title: {
       style: {
-         color: '#A1CDF1',
+         color: '#F7F5FB',
          fontSize: '5.5em',
          fontWeight: 'bold',
          margin: '20vh 0 0 0'
@@ -161,5 +164,8 @@ Highcharts.setOptions(Highcharts.theme);
 
   <body>
     <!--Div that will hold the pie chart-->
-    <div id="container" style="width: 90vw; height: 90vh; margin: 5vh 5vw"></div>
+    <div id="container" style="width: 70vw; height: 70vh; margin-right: auto; margin-left: auto"></div>
+    	<a id = "question_stat1" class="btn button-top btn-stat btn-default" href="../thought/form" role="button">Have a thought</a>
+    	</br>
+		<a id="question_stat2" class="btn button-top btn-stat btn-default" href="../info" role="button">What is Talking Toilet?</a>
   </body>

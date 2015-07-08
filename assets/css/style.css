@@ -154,7 +154,7 @@ p#answer_d {
 }
 
 body{
-  background-color: #F7F5FB;
+  background-color: #A1CDF1;
 }
 
 svg {
@@ -174,7 +174,7 @@ div#highcharts-0 {
 }
 
 html{
-  background-color: #F7F5FB;
+  background-color: #A1CDF1;
 }
 
 .info-page {
@@ -190,3 +190,22 @@ html{
   color: #A1CDF1;
   border-color: #A1CDF1;
 }
+
+a#question_stat1 {
+  height: 10vh;
+  margin: 2.5vh 2.5vw 2.5vh  2.5vw;
+  width: 95vw;
+  font-family: 'Comfortaa', cursive;
+  font-size: 3em;
+  padding:2vh 0 8vh 0;
+}
+
+a#question_stat2 {
+  height: 10vh;
+  margin: 0vh 2.5vw 2.5vh  2.5vw;
+  width: 95vw;
+  font-family: 'Comfortaa', cursive;
+  font-size: 3em;
+  padding:2vh 0 8vh 0;
+}
+
