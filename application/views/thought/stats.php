@@ -4,26 +4,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Thoughts</title>
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>" />
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300' rel='stylesheet' type='text/css'>
 </head>
-<body>
-	<h3>Recent Thoughts</h3><br/>
-	<a class="btn btn-default" href="../question" role="button">Answer the Question</a>
-	<a class="btn btn-default" href="../info" role="button">What is Talking Toilet?</a><br/><br/>
-<?php
-$result = $this->Thought_model->get_last_ten_entries();
-foreach ($result as $row)
-{
-	echo "At ";
-	$date = new DateTime((string)$row->timestamp);
-	echo date_format($date, 'g:ia \o\n l jS F Y');
-	echo " someone thought ";
-	echo $row->body;
-	echo " ";
-	echo "<html>";
-	echo "<br/>";
-	echo "<br/>";
-}
-?>
+<body class="stats-page">
+	<div class="container">
+		<div class="page-header">
+		<h3 class="stats-header">Recent Thoughts</h3><br/>
+		</div>
+		<a class="btn button-top btn-stat btn-default" href="../question" role="button">Answer the Question</a>
+		<a class="btn button-right btn-stat btn-default" href="../info" role="button">What is Talking Toilet?</a>
+		<br/><br/>
+	</div>
+	<?php
+	$result = $this->Thought_model->get_last_ten_entries();
+	foreach ($result as $row)
+	{
+		?>
+		<div class="row">
+			<p class="thought">
+				<?php
+				echo $row->body;
+				?>
+			</p>
+			<p class="time">
+				<?php
+				$date = new DateTime((string)$row->timestamp);
+				echo date_format($date, 'g:ia \o\n l jS F Y');
+				?>
+			</p>
+		</div>
+		<?php
+	}
+	?>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.11.3.min.js"); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
 </body>

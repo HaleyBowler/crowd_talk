@@ -4,12 +4,14 @@
 	<title>Thoughts</title>
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>" />
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body class="thought-form">
+<div class="container">
+<h1 class="form-heading">Thoughts?</h1>
 	<form action="insert_into_db" method="post">
 		<div class="form-group">
-		<label for="thought">Thought</label>
-			<textarea class="form-control" name="body" type="text" rows="10" autofocus></textarea>
+			<textarea placeholder="All thoughts are anonymous" class="form-control thought-input-height" name="body" type="text" rows="10" autofocus></textarea>
 		</div>
 		<button type="submit" class="btn submit-thought" placeholder="Anonymously share you thoughts!">Submit</button>
 	</form>
