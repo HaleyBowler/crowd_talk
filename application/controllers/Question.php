@@ -12,6 +12,7 @@ class Question extends CI_Controller {
 
 		$data = array(
                'question' => $row->question,
+               'question_id' => $row->new_question_id,
                'answer_a' => $row->answer_a,
                'answer_b' => $row->answer_b,
                'answer_c' => $row->answer_c,
@@ -24,7 +25,9 @@ class Question extends CI_Controller {
 	public function submit()
 	{
 		$answer = $_GET['answer'];
-		echo $answer;
+		$question_id = $_GET['question_id'];
+
+		$query = $this->db->query()
 
 		$this->load->view('question/stats');
 	}
