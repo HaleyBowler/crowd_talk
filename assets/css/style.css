@@ -1,6 +1,74 @@
 a#thought_button {
   width: 100%;
   height: 50%;
+}
+
+textarea.form-control {
+	height: 65%;
+	background-color: #F7F5FB;
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;   
+}
+
+.stats-page {
+  background-color: #A1CDF1; 
+  font-family: 'Comfortaa', cursive;
+  color: #F7F5FB;
+}
+
+.stats-header {
+  text-align: center;
+}
+
+.button-top {
+  margin-bottom: 5px;
+}
+.btn-stat {
+  background-color: #F7F5FB;
+  width: 100%;
+  margin: 0;
+  border-radius: 3px;
+  color: #A1CDF1;
+  border-color: #A1CDF1;
+}
+
+.time {
+  font-size: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.submit-thought {
+	width: 100%;
+	height: 20%;
+	background-color: #A1CDF1;
+	color: #F7F5FB;
+	font-size: 7em;
+	font-family: 'Comfortaa', cursive;
+	border-style: solid;
+	border-color: #F7F5FB;
+	border-width: 10px;
+}
+
+.row {
+  width: 95%;
+  margin: 15px auto;
+  border-bottom: solid;
+  border-color: #F7F5FB;
+  padding-bottom: 3px;
+  padding-top: 0;
+  border-width: 1px; 
+}
+
+.form-heading {
+	font-size: 8em;
+	font-family: 'Comfortaa', cursive;
+	color: #F7F5FB;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.center{
   background-color: #A1CDF1;
   font-family: 'Comfortaa', cursive;
   padding: 14vh 0 32vh 0;
@@ -8,6 +76,11 @@ a#thought_button {
   font-size: 7em;
   border-width: 2vh;
   border-color: #F7F5FB;
+}
+
+.thought-form {
+	background-color: #A1CDF1;
+
 }
 
 a#question_button {
@@ -97,3 +170,16 @@ html{
   background-color: #F7F5FB;
 }
 
+.info-page {
+  background-color: #F7F5FB;
+  color:#A1CDF1;  
+}
+
+.btn-about {
+  background-color: #F7F5FB;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  border-radius: 3px;
+  color: #A1CDF1;
+  border-color: #A1CDF1;
+}

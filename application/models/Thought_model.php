@@ -13,7 +13,7 @@ class Thought_model extends CI_Model {
     {
         $this->db->order_by('timestamp', 'DESC'); 
         $this->db->where('body !=', ''); 
-        $query = $this->db->get('thought', 10);
+        $query = $this->db->get('thought', 5);
         return $query->result();        
     }
     
