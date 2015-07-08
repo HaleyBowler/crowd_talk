@@ -21,3 +21,79 @@ a#question_button {
   border-width: 2vh;
   border-color: #A1CDF1;
 }
+
+h1#h1_question {
+  width: 98%;
+  height: 36%;
+  padding: 8vh 0 26vh 0;
+  text-align: center;
+  background-color: #F7F5FB;
+  font-family: 'Comfortaa', cursive;
+  color: #A1CDF1;
+  font-size: 7em;
+  border-width: 1vh;
+  border-color: #A1CDF1;
+  border-style: solid;
+  margin: 0;
+}
+
+p.answer {
+  text-align: center;
+  height: 15%;
+  margin: 0;
+  padding: 5vh 0 9vh 0;
+  font-family: 'Comfortaa', cursive;
+  font-size: 3em;
+  border-style: solid;
+  border-width: 0.5vh;
+  background-color: #F7F5FB;
+  margin: 0.5vh 0.5vw 0.5vh 0.5vw;
+}
+
+p#answer_a {
+  margin: 1vh 0.5vw 0.5vh 0.5vw;
+  border-width: 0.5vh 0.5vh 0.5vh 0.5vh;
+  color:#87BBA2;
+
+}
+
+p#answer_b {
+  border-width: 0.5vh 0.5vh 0.5vh 0.5vh;
+  color:#A285AA;
+}
+
+p#answer_c {
+  border-width: 0.5vh 0.5vh 0.5vh 0.5vh;
+  color:#E5B68E;
+}
+
+p#answer_d {
+  margin: 0.5vh 0.5vw 0 0.5vw;
+  border-width: 0.5vh 0.5vh 0.5vh 0.5vh;
+  color: #D67060;
+}
+
+body{
+  background-color: #F7F5FB;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+div#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+div#highcharts-0 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F7F5FB;
+}
+
+html{
+  background-color: #F7F5FB;
+}
+
