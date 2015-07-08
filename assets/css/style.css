@@ -5,6 +5,7 @@ a#thought_button {
 
 .thought-input-height {
 	height: 300px;
+	background-color: #F7F5FB;
 }
 
 .center{
@@ -16,6 +17,11 @@ a#thought_button {
   border-width: 2vh;
   border-color: #F7F5FB;
   border-radius: 1.6em;
+}
+
+.thought-form {
+	background-color: #A1CDF1;
+
 }
 
 a#question_button {
