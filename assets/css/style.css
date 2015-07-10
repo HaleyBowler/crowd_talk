@@ -191,26 +191,6 @@ div#highcharts-0 {
   border-color: #A1CDF1;
 }
 
-a#question_stat1 {
-  height: 10vh;
-  margin: 2.5vh 2.5vw 2.5vh  2.5vw;
-  width: 95vw;
-  font-family: 'Comfortaa', cursive;
-  font-size: 3em;
-  /*padding:2vh 0 8vh 0;*/
-  border-radius: 3px;
-}
-
-a#question_stat2 {
-  height: 10vh;
-  margin: 2.5vh 2.5vw 2.5vh  2.5vw;
-  width: 95vw;
-  font-family: 'Comfortaa', cursive;
-  font-size: 3em;
-  /*padding:2vh 0 8vh 0;*/
-  border-radius: 3px;
-}
-
 
 body#question_index{
   background-color: #F7F5FB;
