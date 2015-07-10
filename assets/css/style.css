@@ -85,7 +85,7 @@ a#thought_button {
   font-family: 'Comfortaa', cursive;
   padding: 14vh 0 32vh 0;
   color: #F7F5FB;
-  font-size: 7em;
+  font-size: 3.5em;
   border-width: 2vh;
   border-color: #F7F5FB;
 }
@@ -97,7 +97,7 @@ a#question_button {
   font-family: 'Comfortaa', cursive;
   padding: 14vh 0 32vh 0;
   color: #A1CDF1;
-  font-size: 7em;
+  font-size: 3.5em;
   border-width: 2vh;
   border-color: #A1CDF1;
 }
