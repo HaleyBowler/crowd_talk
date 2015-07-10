@@ -34,8 +34,8 @@
 	}
 	?>
 	<div>
-		<a class="btn button-top btn-stat btn-default" href="../question" role="button">Answer the Question</a>
-		<a class="btn button-right btn-stat btn-default" href="../info" role="button">What is Talking Toilet?</a>
+		<a class="btn button-top btn-stat" href="../question" role="button">Answer the Question</a>
+		<a class="btn button-right btn-stat" href="../info" role="button">What is Talking Toilet?</a>
 	</div>
 	</div>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.11.3.min.js"); ?>"></script>
