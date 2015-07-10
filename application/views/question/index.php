@@ -7,7 +7,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300' rel='stylesheet' type='text/css'>
 </head>
 
-
+<body id="question_index">
 <h1 id="h1_question"> <?php echo $question?>  </h1>
 
 <?php echo "<a href='question/submit?answer_letter=a&question_id=$question_id' id=answer_a>" ?>
@@ -29,4 +29,6 @@
 
 <script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.11.3.min.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
+
+</body>
 

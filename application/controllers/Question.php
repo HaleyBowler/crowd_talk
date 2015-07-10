@@ -30,7 +30,7 @@ class Question extends CI_Controller {
 		$answer_letter = '"'.$answer_letter.'"';
 
 
-		$sql = "INSERT INTO `Question_Submit`(`answer_letter`, `question_id`)
+		$sql = "INSERT INTO `question_submit`(`answer_letter`, `question_id`)
 				 VALUES ($answer_letter,$question_id)";
 
 		$this->db->query($sql);

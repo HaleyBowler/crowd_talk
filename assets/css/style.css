@@ -114,7 +114,8 @@ h1#h1_question {
   border-width: 1vh;
   border-color: #A1CDF1;
   border-style: solid;
-  margin: 0;
+    margin-right: auto;
+  margin-left: auto;
 }
 
 p.answer {
@@ -207,5 +208,9 @@ a#question_stat2 {
   font-family: 'Comfortaa', cursive;
   font-size: 3em;
   padding:2vh 0 8vh 0;
+}
+
+body#question_index{
+  background-color: #F7F5FB;
 }
 

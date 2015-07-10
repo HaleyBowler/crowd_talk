@@ -63,12 +63,12 @@ $active_group = 'pdo';
 $query_builder = TRUE;
 
 $db['pdo'] = array(
-	'dsn'	=> 'mysql:host=localhost;dbname=talking_toilet',
-	'hostname' => 'localhost:8888',
-	'username' => 'root',
-	'password' => 'root',
-	'database' => '',
-	'dbdriver' => 'pdo',
+	'dsn'	=> '',
+	'hostname' => 'dedi83.cpt3.host-h.net',
+	'username' => 'talkigbtyd_1',
+	'password' => 'x5YWRhz8',
+	'database' => 'talkigbtyd_db1',
+	'dbdriver' => 'mysql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => TRUE,
