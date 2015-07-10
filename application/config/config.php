@@ -26,7 +26,6 @@ switch ($_SERVER['HTTP_HOST']) {
 	break;
 }
 
-$config['base_url'] = "http://talkingtoilet.urbian.co.za/ci";
 
 /*
 |--------------------------------------------------------------------------
