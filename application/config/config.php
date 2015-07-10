@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = "http://localhost:8880/ci/";
+$config['base_url'] = "http://talkingtoilet.urbian.co.za/ci";
 
 /*
 |--------------------------------------------------------------------------
