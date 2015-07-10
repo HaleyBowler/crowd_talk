@@ -217,10 +217,11 @@ body#question_index{
 }
 
 .change-btn-height {
-  height: 5%;
+  height: 3em;
   border-radius: 10px;
   margin-bottom: 10px;
   font-size: 3em;
+  padding-top: .75em;
 
 }
 
