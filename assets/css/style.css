@@ -216,3 +216,15 @@ body#question_index{
   background-color: #F7F5FB;
 }
 
+.change-btn-height {
+  height: 5%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 3em;
+
+}
+
+.btn-top-margin {
+  margin-top: 100px;
+}
+

@@ -167,9 +167,9 @@ Highcharts.setOptions(Highcharts.theme);
 
     <!--Div that will hold the pie chart-->
     <div id="container" style="width: 70vw; height: 70vh; margin-right: auto; margin-left: auto"></div>
-        <div class="container">
-    	<a class="btn button-top btn-stat btn-default" href="../thought/form" role="button">Have a thought?</a>
+            <div class="container">
+    	<a class="btn btn-top-margin btn-stat change-btn-height" href="../thought/form" role="button">Have a thought?</a>
     	</br>
-		<a class="btn btn-stat btn-default" href="../info" role="button">What is Talking Toilet?</a>
+		<a class="btn btn-stat change-btn-height" href="../info" role="button">What is Talking Toilet?</a>
     </div>
   </body>
