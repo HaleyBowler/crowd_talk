@@ -62,24 +62,52 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'pdo';
 $query_builder = TRUE;
 
-$db['pdo'] = array(
-	'dsn'	=> '',
-	'hostname' => 'dedi83.cpt3.host-h.net',
-	'username' => 'talkigbtyd_1',
-	'password' => 'x5YWRhz8',
-	'database' => 'talkigbtyd_db1',
-	'dbdriver' => 'mysql',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => TRUE,
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
+switch ($_SERVER['HTTP_HOST']) {
+		case "localhost:8880":
+			$db['pdo'] = array(
+				'dsn'	=> 'mysql:host=localhost;dbname=talking_toilet',
+				'hostname' => 'localhost:8880',
+				'username' => 'root',
+				'password' => 'root',
+				'database' => '',
+				'dbdriver' => 'pdo',
+				'dbprefix' => '',
+				'pconnect' => FALSE,
+				'db_debug' => TRUE,
+				'cache_on' => FALSE,
+				'cachedir' => '',
+				'char_set' => 'utf8',
+				'dbcollat' => 'utf8_general_ci',
+				'swap_pre' => '',
+				'encrypt' => FALSE,
+				'compress' => FALSE,
+				'stricton' => FALSE,
+				'failover' => array(),
+				'save_queries' => TRUE
+			);
+			
+			break;
+		
+			default: 
+			$db['pdo'] = array(
+				'dsn'	=> '',
+				'hostname' => 'dedi83.cpt3.host-h.net',
+				'username' => 'talkigbtyd_1',
+				'password' => 'x5YWRhz8',
+				'database' => 'talkigbtyd_db1',
+				'dbdriver' => 'mysqli',
+				'dbprefix' => '',
+				'pconnect' => FALSE,
+				'db_debug' => TRUE,
+				'cache_on' => FALSE,
+				'cachedir' => '',
+				'char_set' => 'utf8',
+				'dbcollat' => 'utf8_general_ci',
+				'swap_pre' => '',
+				'encrypt' => FALSE,
+				'compress' => FALSE,
+				'stricton' => FALSE,
+				'failover' => array(),
+				'save_queries' => TRUE
+			);
+	}

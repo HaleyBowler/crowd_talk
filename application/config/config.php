@@ -17,6 +17,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
+switch ($_SERVER['HTTP_HOST']) {
+	case "localhost:8880":
+		$config['base_url'] = "http://localhost:8880/ci/";
+	break;
+	default:
+		$config['base_url'] = "http://talkingtoilet.urbian.co.za/ci";
+	break;
+}
+
 $config['base_url'] = "http://talkingtoilet.urbian.co.za/ci";
 
 /*
