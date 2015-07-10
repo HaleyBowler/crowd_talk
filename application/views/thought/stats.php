@@ -8,20 +8,16 @@
 	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body class="stats-page">
-	<div class="container">
-		<div class="page-header">
-		<h3 class="stats-header">Recent Thoughts</h3><br/>
-		</div>
-		<a class="btn button-top btn-stat btn-default" href="../question" role="button">Answer the Question</a>
-		<a class="btn button-right btn-stat btn-default" href="../info" role="button">What is Talking Toilet?</a>
-		<br/><br/>
+	<div class="page-header">
+		<h3 class="stats-header">Recent Thoughts</h3>
 	</div>
+	<div class="container">
 	<?php
 	$result = $this->Thought_model->get_last_ten_entries();
 	foreach ($result as $row)
 	{
 		?>
-		<div class="row">
+		<div class="row thought-list-border">
 			<p class="thought">
 				<?php
 				echo $row->body;
@@ -37,7 +33,12 @@
 		<?php
 	}
 	?>
+	<div>
+		<a class="btn button-top btn-stat btn-default" href="../question" role="button">Answer the Question</a>
+		<a class="btn button-right btn-stat btn-default" href="../info" role="button">What is Talking Toilet?</a>
+	</div>
+	</div>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.11.3.min.js"); ?>"></script>
-	<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script><br/>
 </body>
 </html>
