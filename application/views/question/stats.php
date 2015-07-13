@@ -16,7 +16,7 @@
             type: 'pie'
         },
         title: {
-            text: '<?php echo $question ?>'
+            text: "<?php echo $question ?>"
         },
         plotOptions: {
             pie: {
@@ -36,16 +36,16 @@
             name: "Votes",
             colorByPoint: true,
             data: [{
-                name: '<?php echo $answer_a ?>',
+                name: "<?php echo $answer_a ?>",
                 y: <?php echo $a_count ?>
             }, {
-                name: '<?php echo $answer_b ?>',
+                name: "<?php echo $answer_b ?>",
                 y: <?php echo $b_count ?>,
             }, {
-                name: '<?php echo $answer_c ?>',
+                name: "<?php echo $answer_c ?>",
                 y: <?php echo $c_count ?>
             }, {
-                name: '<?php echo $answer_d ?>',
+                name: "<?php echo $answer_d ?>",
                 y: <?php echo $d_count ?>
             }]
         }]
