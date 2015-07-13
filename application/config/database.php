@@ -92,9 +92,9 @@ switch ($_SERVER['HTTP_HOST']) {
 			$db['pdo'] = array(
 				'dsn'	=> '',
 				'hostname' => 'dedi83.cpt3.host-h.net',
-				'username' => 'talkigbtyd_1',
-				'password' => 'x5YWRhz8',
-				'database' => 'talkigbtyd_db1',
+				'username' => 'talkidhezz_1',
+				'password' => 'q2J8t4q8',
+				'database' => 'talkidhezz_db1',
 				'dbdriver' => 'mysqli',
 				'dbprefix' => '',
 				'pconnect' => FALSE,

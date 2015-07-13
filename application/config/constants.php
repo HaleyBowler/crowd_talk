@@ -1,39 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 /*
-switch ($_SERVER['HTTP_HOST']) {
-		case "localhost:8880":
-			// your database's name
-			define("DATABASE", "current_playbook");
-
-			// your database's password
-			define("PASSWORD", "root");
-
-			// your database's server
-			define("SERVER", "localhost");
-
-			// your database's username
-			define("USERNAME", "root");
-			
-			break;
-		
-		default: 
-			// your database's name
-			define("DATABASE", "summerplaybook_db");
-
-			// your database's password
-			define("PASSWORD", "nfibraun55720");
-
-			// your database's server
-			define("SERVER", "localhost");
-
-			// your database's username
-			define("USERNAME", "root");
-			
-			break;
-	}
-*/
-/*
 |--------------------------------------------------------------------------
 | File and Directory Modes
 |--------------------------------------------------------------------------
