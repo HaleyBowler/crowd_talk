@@ -11,9 +11,9 @@
 <h1 class="form-heading">Thoughts?</h1>
 	<form action="insert_into_db" method="post">
 		<div class="form-group">
-			<textarea placeholder="All thoughts are anonymous" class="form-control thought-input-height" name="body" type="text" rows="10" autofocus></textarea>
+			<textarea placeholder="What are you thinking about right now?" class="form-control" name="body" type="text" rows="10" autofocus></textarea>
 		</div>
-		<button type="submit" class="btn submit-thought" placeholder="Anonymously share you thoughts!">Submit</button>
+		<button type="submit" class="btn submit-thought">Submit</button>
 	</form>
 	</div>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.11.3.min.js"); ?>"></script>

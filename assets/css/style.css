@@ -180,6 +180,7 @@ div#highcharts-0 {
 .info-page {
   background-color: #F7F5FB;
   color:#A1CDF1;  
+  font-family: 'Comfortaa', cursive;
 }
 
 .btn-about {
@@ -209,3 +210,23 @@ body#question_index{
   margin-top: 100px;
 }
 
+a:link {
+  text-decoration: none;
+  color: #A1CDF1;
+}
+
+a:visited {
+    color: #A1CDF1;
+}
+
+a:hover {
+    color: #A1CDF1;
+}
+
+a:active {
+    color: #A1CDF1;
+}
+
+.code-link {
+  margin-bottom: 5px;
+}
