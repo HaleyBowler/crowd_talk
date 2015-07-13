@@ -1,7 +1,7 @@
 <?php
 class Question_model extends CI_Model {
 
-    public $ask_date;
+    public $current;
     public $question;
     public $answer_a;
     public $answer_b;
@@ -17,7 +17,7 @@ class Question_model extends CI_Model {
 
     function insert_entry()
     {
-        $this->ask_date = $_POST['ask_date'];
+        $this->current = true;
         $this->question   = $_POST['question'];
         $this->answer_a   = $_POST['answer_a'];
         $this->answer_b   = $_POST['answer_b'];

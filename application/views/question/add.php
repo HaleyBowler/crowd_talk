@@ -7,10 +7,6 @@ Question:
 <input type="text" name="question" >
 <br>
 
-Question date:
-<input type="date" name="ask_date" >
-<br>
-
 Answer A.
 <input type="text" name="answer_a" >
 <br>

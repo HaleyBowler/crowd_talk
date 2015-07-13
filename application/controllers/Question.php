@@ -3,10 +3,7 @@ class Question extends CI_Controller {
 
 	public function index()
 	{
-		$date = date("Y-m-d");
-		$date = '"'.$date.'"';
-
-		$query = $this->db->query('SELECT * FROM `question` WHERE ask_date='.$date.' LIMIT 1');
+		$query = $this->db->query('SELECT * FROM `question` WHERE current=true');
 
 		$row = $query->row();
 
@@ -74,7 +71,8 @@ class Question extends CI_Controller {
 
 	public function insert_into_db()
 	{
-
+		/*$current_question = $this->db->query('SELECT * FROM `question` WHERE current= 'true' ');*/
+		$this->db->query('UPDATE `question` SET current=false WHERE current=true');
 		$this->load->model('Question_model');
 		$this->Question_model->insert_entry();
 		$this->load->view('success');

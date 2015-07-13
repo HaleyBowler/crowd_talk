@@ -13,8 +13,8 @@ class Migration_Questions extends CI_Migration {
                                 'unsigned' => TRUE,
                                 'auto_increment' => TRUE
                         ),
-                        'ask_date' => array(
-                                'type' => 'DATE'
+                        'current' => array(
+                                'type' => 'BOOLEAN'
                         ),
                         'question' => array(
                                 'type' => 'VARCHAR',
