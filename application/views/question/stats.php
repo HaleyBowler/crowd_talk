@@ -58,11 +58,6 @@
  */
 
 // Load the fonts
-Highcharts.createElement('link', {
-   href: 'http://fonts.googleapis.com/css?family=Comfortaa:400,300',
-   rel: 'stylesheet',
-   type: 'text/css'
-}, null, document.getElementsByTagName('head')[0]);
 
 // Add the background image to the container
 Highcharts.wrap(Highcharts.Chart.prototype, 'getContainer', function (proceed) {
@@ -83,7 +78,7 @@ Highcharts.theme = {
       style: {
          color: '#F7F5FB',
          fontSize: '5.5em',
-         fontWeight: 'bold',
+         fontWeight: 'normal',
          margin: '20vh 0 0 0'
       }
    },
@@ -97,8 +92,9 @@ Highcharts.theme = {
    },
    legend: {
       itemStyle: {
-         fontWeight: 'bold',
-         fontSize: '30px'
+         fontWeight: 'normal',
+         fontSize: '30px',
+         color: '#F7F5FB'
       }
    },
    xAxis: {
@@ -117,7 +113,6 @@ Highcharts.theme = {
    },
    plotOptions: {
       series: {
-         shadow: true
       },
       candlestick: {
          lineColor: '#404048'
@@ -135,9 +130,6 @@ Highcharts.theme = {
    },
    rangeSelector: {
       buttonTheme: {
-         fill: 'white',
-         stroke: '#C0C0C8',
-         'stroke-width': 1,
          states: {
             select: {
                fill: '#D0D0D8'
