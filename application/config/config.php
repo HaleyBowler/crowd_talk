@@ -23,7 +23,7 @@ switch ($_SERVER['HTTP_HOST']) {
 		$config['base_url'] = "http://localhost:8880/ci/";
 	break;
 	default:
-		$config['base_url'] = "http://talkingtoilets.info/ci";
+		$config['base_url'] = "http://talkingtoilets.info";
 }
 
 /*
