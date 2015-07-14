@@ -38,11 +38,11 @@ textarea.form-control {
 	height: 10%;
 	background-color: #A1CDF1;
 	color: #F7F5FB;
-	font-size: 7em;
+	font-size: 3em;
 	font-family: 'Comfortaa', cursive;
 	border-style: solid;
 	border-color: #F7F5FB;
-	border-width: 10px;
+	border-width: 3px;
 }
 
 .thought-list-border {
@@ -232,5 +232,5 @@ a:active {
 }
 
 .form-margin {
-  margin-top: 35%;
+  margin-top: 10%;
 }
