@@ -7,11 +7,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body class="thought-form">
-<div class="container">
+<div class="container form-margin">
 <h1 class="form-heading">Thoughts?</h1>
 	<form action="insert_into_db" method="post">
 		<div class="form-group">
-			<textarea placeholder="What are you thinking about right now?" class="form-control" name="body" type="text" rows="10" autofocus></textarea>
+			<textarea placeholder="What are you thinking about right now?" class="form-control" name="body" type="text" rows="2" autofocus></textarea>
 		</div>
 		<button type="submit" class="btn submit-thought">Submit</button>
 	</form>

@@ -1,5 +1,5 @@
 textarea.form-control {
-	height: 65%;
+	height: 20%;
 	background-color: #F7F5FB;
   font-family: 'Comfortaa', cursive;
   font-size: 40px;   
@@ -35,7 +35,7 @@ textarea.form-control {
 
 .submit-thought {
 	width: 100%;
-	height: 20%;
+	height: 10%;
 	background-color: #A1CDF1;
 	color: #F7F5FB;
 	font-size: 7em;
@@ -229,4 +229,8 @@ a:active {
 
 .code-link {
   margin-bottom: 5px;
+}
+
+.form-margin {
+  margin-top: 35%;
 }
