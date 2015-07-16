@@ -47,6 +47,8 @@ class Question extends CI_Controller {
 		$b_count =  $answer_b_query->num_rows();
 		$c_count =  $answer_c_query->num_rows();
 		$d_count =  $answer_d_query->num_rows();
+		$answer_count = $a_count + $b_count + $c_count + $d_count;
+
 
 		$data = array(
 			'question' => $question,
@@ -57,8 +59,8 @@ class Question extends CI_Controller {
 			'answer_a' => $answer_a,
 			'answer_b' => $answer_b,
 			'answer_c' => $answer_c,
-			'answer_d' => $answer_d
-
+			'answer_d' => $answer_d,
+			'answer_count' => $answer_count
 		);
 
 		$this->load->view('question/stats', $data);
