@@ -18,6 +18,9 @@
         title: {
             text: "<?php echo $question ?>"
         },
+        subtitle: {
+            text: "<?php echo $answer_count ?> people voted!"
+        },
         plotOptions: {
             pie: {
                     allowPointSelect: true,
