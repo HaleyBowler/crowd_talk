@@ -20,7 +20,7 @@ class Thought_model extends CI_Model {
     
     function insert_into_db()
     {
-        $this->body = $_POST['body'];       
+        $this->body = $_POST['body'];
         $this->db->insert('thought', $this);
     }
 
