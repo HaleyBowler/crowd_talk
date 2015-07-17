@@ -12,11 +12,12 @@ class Thought extends CI_Controller {
     	$this->Thought_model->insert_into_db();
 		$this->load->view('thought/stats');
 	}
-    
+   
     function stats() 
     {
         $this->load->model('Thought_model');
         $this->load->view('thought/stats');
     }
+
 }
 ?>

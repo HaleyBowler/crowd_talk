@@ -7,7 +7,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300' rel='stylesheet' type='text/css'>
 	<script>
 		if (!navigator.geolocation){
-			alert("ERROR");
+			alert("ERROR 1");
 		}
 
 		function success(position) {
@@ -15,13 +15,16 @@
 			var longitude = position.coords.longitude;
 
 			alert('Latitude is ' + latitude + '° Longitude is ' + longitude + '°');
-			$.post('http://www.http://localhost:8880/ci/thought/insert_into_db', { latitude:latitude, longitude:longitude }, function(){
-        // some optional callback
-    		});
+			$.ajax({
+				url: 'stats',
+  				type: "POST",
+  				data: { latitude:latitude, longitude:longitude }
+  				});
+			
 		};
 
 		function error() {
-			alert("ERROR");
+			alert("ERROR 2");
 		};
 
 		navigator.geolocation.getCurrentPosition(success, error);

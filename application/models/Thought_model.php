@@ -5,6 +5,7 @@ class Thought_model extends CI_Model {
     public $body;
     public $timestamp;
 
+
     function __construct()
     {
         parent::__construct();

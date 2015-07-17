@@ -59,8 +59,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 /*Thought Path*/
+$route['ci/thought/stats.php'] = 'thought/stats';
 $route['ci/thought/form'] = 'thought/form';
-$route['ci/thought/stats'] = 'thought/stats';
 $route['ci/thought/insert_into_db'] = 'thought/insert_into_db';
 $route['ci/info/index'] = 'info';
 

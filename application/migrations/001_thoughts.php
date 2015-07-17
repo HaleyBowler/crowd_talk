@@ -19,6 +19,12 @@ class Migration_Thoughts extends CI_Migration {
                             ),
                             'timestamp' => array(
                                     'type' => 'TIMESTAMP'
+                            ),
+                            'latitude' => array(
+                                'type' => 'FLOAT',
+                            ),
+                            'longitude' => array(
+                                'type' => 'FLOAT'
                             )
                     ));
                     $this->dbforge->add_key('thought_id', TRUE);
