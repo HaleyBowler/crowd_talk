@@ -3,6 +3,8 @@ class Thought_model extends CI_Model {
 
     public $thought_id;
     public $body;
+    public $latitude;
+    public $longitude;
     public $timestamp;
 
 
@@ -20,6 +22,8 @@ class Thought_model extends CI_Model {
     
     function insert_into_db()
     {
+        $this->latitude = $_POST['latitude'];
+        $this->longitude = $_POST['longitude'];
         $this->body = $_POST['body'];       
         $this->db->insert('thought', $this);
     }

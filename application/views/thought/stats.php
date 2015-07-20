@@ -30,18 +30,13 @@
 				?>
 			</p>
 		</div>
-		<?php
+	<?php
 	}
 	?>
 	<div>
 		<a class="btn button-top btn-stat" href="../question" role="button">Answer the Question</a>
 		<a class="btn button-right btn-stat" href="../info" role="button">What is Talking Toilet?</a>
 	</div>
-	<?php
-	$latitude = 12;
-	$latitude = $this->input->post('latitude');
-	echo $latitude;
-	?>
 	</div>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.11.3.min.js"); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script><br/>
