@@ -6,22 +6,21 @@
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>" />
 	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300' rel='stylesheet' type='text/css'>
 	<script>
-
 		if (!navigator.geolocation){
-			alert("ERROR 1");
+			alert("Could not locate your position");
 		}
 
 		function success(position) {
-			var latitude  = position.coords.latitude; //position.coords.latitude;
+			var latitude  = position.coords.latitude;
 			var longitude = position.coords.longitude;
 			document.getElementById("latitude").value = latitude;
 			document.getElementById("longitude").value = longitude;
 		};
 
 		function error() {
-			alert("ERROR 2");
+			alert("Error2");
 		};
-
+		
 		if(navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(success, error);
 		}
